@@ -1,0 +1,238 @@
+/* Estilos generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cabecera {
+  background-color: #004d40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera__titulo {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.cabecera__nav {
+  margin-top: 10px;
+}
+
+.nav__lista {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item {
+  margin: 0 15px;
+}
+
+.nav__enlace {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.nav__enlace:hover {
+  color: #ffcc00;
+}
+
+.contenido-principal {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo de la página */
+}
+
+.deporte {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deporte:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.deporte__titulo {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #004d40;
+}
+
+.deporte__imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deporte__imagen:hover {
+  transform: scale(1.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos adicionales para imágenes grandes */
+.deporte__imagen-grande {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deporte__imagen-grande:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+
+.deporte__imagen-grande:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.deporte__imagen-grande:hover {
+  transform: scale(1.2) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.deporte__descripcion {
+  font-size: 1em;
+  color: #333;
+}
+
+.deporte__boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004d40;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.deporte__boton:hover {
+  background-color: #ffcc00;
+  color: #004d40;
+}
+
+/* Nuevos estilos agregados */
+.deporte__imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Sección de pie de página */
+.pie-de-pagina {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pie-de-pagina__texto {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Estilos específicos para la página de Parkour */
+.deporte__subtitulo {
+  font-size: 1.5em;
+  color: #004d40;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.deporte__contenido-adicional {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 20px;
+}
+
+.contenido-principal {
+  display: flex;
+  width: 100%;
+}
+
+.contenido-izquierda, .contenido-derecha {
+  width: 48%;
+  padding: 10px;
+}
+
+.contenido-derecha {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deporte__imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.deporte__imagen-grande {
+  width: 30%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Colores específicos por deporte */
+body.parkour {
+  background-color: #e0f7fa; /* Verde claro */
+}
+
+body.bmx {
+  background-color: #bbdefb; /* Azul claro */
+}
+
+body.skateboard {
+  background-color: #ffe0b2; /* Naranja claro */
+}
+
+body.tejo {
+  background-color: #d7ccc8; /* Marrón claro */
+}
+
+body.bolirana {
+  background-color: #f8bbd0; /* Rosa claro */
+}

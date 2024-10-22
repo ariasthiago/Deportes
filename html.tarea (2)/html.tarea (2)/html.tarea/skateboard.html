@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skateboard</title>
+  <link rel="stylesheet" href="proyecto.css">
+  <style>
+    body {
+      background-color: #e0f7fa; /* Verde claro */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .cabecera {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .cabecera__titulo {
+      font-size: 2.5em;
+      color: #004d40;
+    }
+    .contenido-principal {
+      display: flex;
+      justify-content: center; /* Centra los cuadros */
+      gap: 20px; /* Añade espacio entre los cuadros */
+      width: 100%;
+      max-width: 1200px; /* Limita el ancho máximo de la página */
+    }
+    .contenido-izquierda, .contenido-derecha {
+      width: 48%; /* Ajusta el ancho de ambos cuadros */
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+    .contenido-izquierda {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra verticalmente */
+      align-items: center; /* Centra horizontalmente */
+    }
+    .deporte__titulo {
+      font-size: 2em;
+      color: #004d40;
+      width: 100%;
+      text-align: center; /* Cambiado a center para alinear el título */
+      margin-bottom: 20px;
+    }
+    .deporte__imagenes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .deporte__imagen-grande {
+      width: 80%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .deporte__imagen-grande:hover {
+      transform: scale(1.2);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+    .deporte__descripcion {
+      width: 100%;
+      font-size: 1.2em;
+      color: #333;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .deporte__subtitulo {
+      font-size: 1.5em;
+      color: #004d40;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+    .video-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .video {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+    .pie-de-pagina {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      background-color: #004d40;
+      color: white;
+      margin-top: 20px;
+    }
+    .pie-de-pagina__texto {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header class="cabecera">
+    <h1 class="cabecera__titulo">Skateboard</h1>
+  </header>
+
+  <main class="contenido-principal">
+    <div class="contenido-izquierda">
+      <section class="deporte deporte--skateboard">
+        <h2 class="deporte__titulo">Origen del Skateboard</h2>
+        <div class="deporte__imagenes">
+          <img src="pat1.jpg" alt="Skateboard 1" class="deporte__imagen-grande">
+          <img src="pat2.jpg" alt="Skateboard 2" class="deporte__imagen-grande">
+        </div>
+        <p class="deporte__descripcion">La historia del skateboard (o más conocido como monopatín en español) es una historia fascinante que abarca más de 70 años. Sus inicios se remontan a la década de 1950, cuando algunos jóvenes estadounidenses comenzaron a utilizar tablas de patín y rodillas de metal para hacer trucos y acrobacias en el patio de su casa. Con el tiempo, el skateboard fue evolucionando y se convirtió en un deporte de élite con atletas de renombre internacional..</p>
+      </section>
+    </div>
+
+    <div class="contenido-derecha">
+      <h3 class="deporte__subtitulo">Galería y Video</h3>
+      <div class="deporte__imagenes">
+        <img src="pat3.jpg" alt="Skateboard 3" class="deporte__imagen-grande">
+        <img src="pat4.webp" alt="Skateboard 4" class="deporte__imagen-grande">
+      </div>
+      <div class="video-container">
+        <h3>Mira este Video</h3>
+        <video class="video" controls>
+          <source src="Lo mejor del Skateboard Big Air de los X Games Foz.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie-de-pagina">
+    <p class="pie-de-pagina__texto">© 2024 Promoción de Disciplinas Deportivas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
